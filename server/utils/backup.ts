@@ -10,12 +10,7 @@ export interface BackupData {
   links: Link[]
 }
 
-export async function backupKVToR2(env: Cloudflare.Env, isManual: boolean = false): Promise<void> {
-  if (!env.R2) {
-    console.info('[backup:kv] R2 binding not configured, skipping backup')
-    return
-  }
-
+export async function collectBackupData(env: Cloudflare.Env): Promise<BackupData> {
   const allLinks: Link[] = []
   let cursor: string | undefined
 
@@ -40,15 +35,23 @@ export async function backupKVToR2(env: Cloudflare.Env, isManual: boolean = fals
     cursor = list.list_complete ? undefined : list.cursor
   } while (cursor)
 
-  const now = new Date()
-  const backupData: BackupData = {
+  return {
     version: '1.0',
-    exportedAt: now.toISOString(),
+    exportedAt: new Date().toISOString(),
     count: allLinks.length,
     links: allLinks,
   }
+}
 
-  const timestamp = now.toISOString().replace(/:/g, '-')
+export async function backupKVToR2(env: Cloudflare.Env, isManual: boolean = false): Promise<void> {
+  if (!env.R2) {
+    console.info('[backup:kv] R2 binding not configured, skipping backup')
+    return
+  }
+
+  const backupData = await collectBackupData(env)
+
+  const timestamp = backupData.exportedAt.replace(/:/g, '-')
   const prefix = isManual ? 'manual-links-' : 'links-'
   const filename = `backups/${prefix}${timestamp}.json`
 
@@ -57,10 +60,10 @@ export async function backupKVToR2(env: Cloudflare.Env, isManual: boolean = fals
       contentType: 'application/json',
     },
     customMetadata: {
-      count: String(allLinks.length),
+      count: String(backupData.count),
       exportedAt: backupData.exportedAt,
     },
   })
 
-  console.info(`[backup:kv] Backup completed: ${filename}, ${allLinks.length} links`)
+  console.info(`[backup:kv] Backup completed: ${filename}, ${backupData.count} links`)
 }

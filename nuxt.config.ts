@@ -34,6 +34,10 @@ export default defineNuxtConfig({
     listQueryLimit: 500,
     disableBotAccessLog: false,
     disableAutoBackup: false,
+    githubBackupToken: '', // NUXT_GITHUB_BACKUP_TOKEN — GitHub PAT (Contents: Read/Write) for links auto-backup
+    githubBackupRepo: '', // NUXT_GITHUB_BACKUP_REPO — target repo as "owner/repo"
+    githubBackupBranch: 'main', // NUXT_GITHUB_BACKUP_BRANCH
+    githubBackupPath: 'backups', // NUXT_GITHUB_BACKUP_PATH — folder within the repo
     notFoundRedirect: '',
     safeBrowsingDoh: '', // Set to DoH URL to enable auto-detection, e.g. https://family.cloudflare-dns.com/dns-query
     public: {
