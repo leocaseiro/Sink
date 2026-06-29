@@ -13,6 +13,9 @@
   ],
   "keep_vars": true,
   "upload_source_maps": true,
+  "vars": {
+    "NUXT_REDIRECT_WITH_QUERY": "true" // append short-link query params to the destination URL by default (per-link override still works)
+  },
   "observability": {
     "logs": {
       "enabled": true
@@ -34,17 +37,19 @@
   "kv_namespaces": [
     {
       "binding": "KV",
-      "preview_id": "ef93d42dc4b34969bab404d2e80f8dd3",
-      "id": "ef93d42dc4b34969bab404d2e80f8dd3" // IMPORTANT: Change this to your KV namespace ID
+      "preview_id": "f55967761ad94a6d990381ebdc6707dd",
+      "id": "f55967761ad94a6d990381ebdc6707dd" // Your KV namespace (created via `wrangler kv namespace create KV`)
     }
   ],
-  "r2_buckets": [
-    {
-      "binding": "R2",
-      "preview_bucket_name": "sink",
-      "bucket_name": "sink" // IMPORTANT: Change this to your R2 bucket name, or create one with `wrangler r2 bucket create sink`
-    }
-  ],
+  // R2 disabled — no payment card needed. Links auto-backup will go to GitHub instead (daily cron below).
+  // To re-enable: enable R2 in the Cloudflare dashboard, run `wrangler r2 bucket create sink`, then uncomment:
+  // "r2_buckets": [
+  //   {
+  //     "binding": "R2",
+  //     "preview_bucket_name": "sink",
+  //     "bucket_name": "sink"
+  //   }
+  // ],
   "triggers": {
     "crons": ["0 0 * * *"] // Run backup task daily at 00:00 UTC
   }
