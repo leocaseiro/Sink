@@ -47,9 +47,9 @@ export default defineNuxtConfig({
     },
   },
   routeRules: {
-    '/': {
-      prerender: true,
-    },
+    // '/' is intentionally NOT prerendered: when NUXT_HOME_URL is set, the redirect
+    // middleware must handle the apex. A prerendered index.html would be served by
+    // Cloudflare's asset handler before the Worker runs, bypassing the redirect.
     '/api/**': {
       cors: process.env.NUXT_API_CORS === 'true',
     },

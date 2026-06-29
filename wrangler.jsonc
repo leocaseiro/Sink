@@ -14,7 +14,8 @@
   "keep_vars": true,
   "upload_source_maps": true,
   "vars": {
-    "NUXT_REDIRECT_WITH_QUERY": "true" // append short-link query params to the destination URL by default (per-link override still works)
+    "NUXT_REDIRECT_WITH_QUERY": "true", // append short-link query params to the destination URL by default (per-link override still works)
+    "NUXT_HOME_URL": "https://leocaseiro.com" // apex homepage (leoc.au/) redirects here
   },
   "observability": {
     "logs": {
