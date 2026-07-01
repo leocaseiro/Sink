@@ -7,6 +7,11 @@
     "directory": ".output/public",
     "html_handling": "drop-trailing-slash"
   },
+  "routes": [
+    // Custom domains bound to the worker; TLS cert auto-provisions on deploy.
+    { "pattern": "leoc.au", "custom_domain": true },
+    { "pattern": "www.leoc.au", "custom_domain": true } // www serves slugs too (no dead-www DNS error)
+  ],
   "compatibility_date": "2025-05-08",
   "compatibility_flags": [
     "nodejs_compat"
