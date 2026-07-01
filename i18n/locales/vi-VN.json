@@ -36,7 +36,7 @@
   },
   "layouts": {
     "footer": {
-      "copyright": "Sản phẩm của HTML.ZONE",
+      "copyright": "Leo Caseiro",
       "social": {
         "email": "Email",
         "telegram": "Telegram",
@@ -136,14 +136,14 @@
       "follow": "Theo dõi tôi trên X (Twitter)"
     },
     "stats": {
-      "title": "Số liệu Sink",
+      "title": "Số liệu Leo Caseiro",
       "subtitle": "Được tin dùng bởi các nhà phát triển trên toàn thế giới",
       "stars": "Stars trên GitHub",
       "forks": "Forks"
     },
     "testimonials": {
       "title": "Người dùng yêu thích",
-      "subtitle": "Xem các nhà phát triển nói gì về Sink"
+      "subtitle": "Xem các nhà phát triển nói gì về Leo Caseiro"
     }
   },
   "dashboard": {
@@ -410,7 +410,7 @@
       },
       "errors": {
         "invalid_json": "Tệp JSON không hợp lệ",
-        "invalid_format": "Định dạng tệp không hợp lệ. Vui lòng sử dụng tệp được xuất từ Sink.",
+        "invalid_format": "Định dạng tệp không hợp lệ. Vui lòng sử dụng tệp được xuất từ Leo Caseiro.",
         "no_links": "Không tìm thấy liên kết trong tệp",
         "parse_error": "Không thể phân tích tệp"
       }

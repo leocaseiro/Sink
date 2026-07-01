@@ -36,7 +36,7 @@
   },
   "layouts": {
     "footer": {
-      "copyright": "Produits de HTML.ZONE",
+      "copyright": "Leo Caseiro",
       "social": {
         "email": "Email",
         "telegram": "Telegram",
@@ -136,14 +136,14 @@
       "follow": "Suivez-moi sur X(Twitter)"
     },
     "stats": {
-      "title": "Sink en chiffres",
+      "title": "Leo Caseiro en chiffres",
       "subtitle": "Approuvé par les développeurs du monde entier",
       "stars": "Stars sur GitHub",
       "forks": "Forks"
     },
     "testimonials": {
       "title": "Aimé par les utilisateurs",
-      "subtitle": "Découvrez ce que disent les développeurs à propos de Sink"
+      "subtitle": "Découvrez ce que disent les développeurs à propos de Leo Caseiro"
     }
   },
   "dashboard": {
@@ -410,7 +410,7 @@
       },
       "errors": {
         "invalid_json": "Fichier JSON invalide",
-        "invalid_format": "Format de fichier invalide. Veuillez utiliser un fichier exporté depuis Sink.",
+        "invalid_format": "Format de fichier invalide. Veuillez utiliser un fichier exporté depuis Leo Caseiro.",
         "no_links": "Aucun lien trouvé dans le fichier",
         "parse_error": "Échec de l'analyse du fichier"
       }

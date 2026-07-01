@@ -36,7 +36,7 @@
   },
   "layouts": {
     "footer": {
-      "copyright": "Sebuah produk dari HTML.ZONE",
+      "copyright": "Leo Caseiro",
       "social": {
         "email": "Email",
         "telegram": "Telegram",
@@ -136,14 +136,14 @@
       "follow": "Ikuti di X (Twitter)"
     },
     "stats": {
-      "title": "Sink dalam Angka",
+      "title": "Leo Caseiro dalam Angka",
       "subtitle": "Dipercaya oleh developer di seluruh dunia",
       "stars": "Bintang di GitHub",
       "forks": "Fork"
     },
     "testimonials": {
       "title": "Disukai Pengguna",
-      "subtitle": "Lihat apa kata developer tentang Sink"
+      "subtitle": "Lihat apa kata developer tentang Leo Caseiro"
     }
   },
   "dashboard": {
@@ -410,7 +410,7 @@
       },
       "errors": {
         "invalid_json": "File JSON tidak valid",
-        "invalid_format": "Format file tidak valid. Gunakan file yang diekspor dari Sink.",
+        "invalid_format": "Format file tidak valid. Gunakan file yang diekspor dari Leo Caseiro.",
         "no_links": "Tidak ada tautan yang ditemukan dalam file",
         "parse_error": "Gagal mengurai file"
       }

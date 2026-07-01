@@ -36,7 +36,7 @@
   },
   "layouts": {
     "footer": {
-      "copyright": "产品来自 HTML.ZONE",
+      "copyright": "Leo Caseiro",
       "social": {
         "email": "邮箱",
         "telegram": "Telegram",
@@ -136,7 +136,7 @@
       "follow": "在 X(Twitter) 上关注我"
     },
     "stats": {
-      "title": "Sink 数据",
+      "title": "Leo Caseiro 数据",
       "subtitle": "受到全球开发者的信赖",
       "stars": "GitHub Stars",
       "forks": "Forks"
@@ -410,7 +410,7 @@
       },
       "errors": {
         "invalid_json": "无效的 JSON 文件",
-        "invalid_format": "文件格式无效，请使用从 Sink 导出的文件",
+        "invalid_format": "文件格式无效，请使用从 Leo Caseiro 导出的文件",
         "no_links": "文件中未找到链接",
         "parse_error": "文件解析失败"
       }

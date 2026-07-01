@@ -36,7 +36,7 @@
   },
   "layouts": {
     "footer": {
-      "copyright": "產品來自 HTML.ZONE",
+      "copyright": "Leo Caseiro",
       "social": {
         "email": "信箱",
         "telegram": "Telegram",
@@ -136,14 +136,14 @@
       "follow": "在 X(Twitter) 上追蹤我"
     },
     "stats": {
-      "title": "有關 Sink 的數據",
+      "title": "有關 Leo Caseiro 的數據",
       "subtitle": "受到全球開發者信賴",
       "stars": "個 GitHub 星星",
       "forks": "次分叉"
     },
     "testimonials": {
       "title": "深受用戶喜愛",
-      "subtitle": "看看開發者們都怎麼描述 Sink"
+      "subtitle": "看看開發者們都怎麼描述 Leo Caseiro"
     }
   },
   "dashboard": {
@@ -410,7 +410,7 @@
       },
       "errors": {
         "invalid_json": "無效的 JSON 檔案",
-        "invalid_format": "檔案格式無效，請使用從 Sink 匯出的檔案",
+        "invalid_format": "檔案格式無效，請使用從 Leo Caseiro 匯出的檔案",
         "no_links": "檔案中找不到連結",
         "parse_error": "檔案解析失敗"
       }
