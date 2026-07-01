@@ -26,8 +26,8 @@ const { title } = useAppConfig()
                 lg:w-auto
               "
             >
-              <NuxtLink
-                to="/"
+              <a
+                href="https://leocaseiro.com"
                 :title="title"
                 aria-label="home"
                 class="flex items-center space-x-2"
@@ -42,7 +42,7 @@ const { title } = useAppConfig()
                   >
                 </span>
                 <span class="text-xl font-black">{{ title }}</span>
-              </NuxtLink>
+              </a>
 
               <button
                 aria-label="Toggle Menu"
@@ -119,8 +119,8 @@ const { title } = useAppConfig()
               md:flex-row md:gap-6
             "
           >
-            <NuxtLink
-              to="/"
+            <a
+              href="https://leocaseiro.com"
               :title="title"
               aria-label="home"
               class="block size-fit"
@@ -137,7 +137,7 @@ const { title } = useAppConfig()
                 </span>
                 <span class="text-xl font-black">{{ title }}</span>
               </div>
-            </NuxtLink>
+            </a>
 
             <small class="block text-center text-sm text-muted-foreground">
               &copy; {{ new Date().getFullYear() }}

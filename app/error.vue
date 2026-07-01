@@ -14,7 +14,7 @@ defineProps<{
         mx-auto flex h-full w-full max-w-[600px] items-center justify-center
         [&_svg]:w-full
       "
-      href="/"
+      href="https://leocaseiro.com"
       v-html="errorImage"
     />
   </NuxtLayout>

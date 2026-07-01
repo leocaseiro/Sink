@@ -4,7 +4,7 @@ export default defineAppConfig({
   coffee: '',
   twitter: '',
   telegram: '',
-  description: 'A Simple / Speedy / Secure Link Shortener with Analytics, 100% run on Cloudflare.',
+  description: 'Leo Caseiro - link shortener',
   image: 'https://leoc.au/og.png',
   previewTTL: 300, // 5 minutes
   slugRegex: /^[a-z0-9]+(?:-[a-z0-9]+)*$/i,

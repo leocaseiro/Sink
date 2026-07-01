@@ -84,7 +84,7 @@ export default defineNuxtConfig({
       production: 'runtime',
       meta: {
         title: 'Leo Caseiro API',
-        description: 'A Simple / Speedy / Secure Link Shortener with Analytics, 100% run on Cloudflare.',
+        description: 'Leo Caseiro - link shortener',
       },
       route: '/_docs/openapi.json',
       ui: {
